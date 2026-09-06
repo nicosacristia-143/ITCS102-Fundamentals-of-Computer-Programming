@@ -10,7 +10,7 @@ i = 1
 
 bal = 169833
 
-print("Money to Deposit -->",bal)
+bal = eval(input("Amount to deposit ---> "))
 
 thousands = bal // a 
 bal = bal % a
