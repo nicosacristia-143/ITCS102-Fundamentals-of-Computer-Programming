@@ -8,8 +8,6 @@ g = 10
 h = 5
 i = 1
 
-bal = 169833
-
 bal = eval(input("Amount to deposit ---> "))
 
 thousands = bal // a 
