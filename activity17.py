@@ -1,10 +1,20 @@
-#box
-box = int(input("Number of * of your box:"))
+fruits = ["Apple", "Banana","Pineapple","Mango"]
+print(fruits)
 
-for x in range (box):
-    for y in range (box):
-        if x == 0 or y == 0 or x == box - 1 or y == box - 1:
-            print("*", end=" ")
-        else:
-            print(" ", end=" ")
-    print()
+num = int(input("Pick the fruit you want:"))
+num1 = int(input("Pick one more:"))
+fruit1 = str(input("Is there any fruit you want to add on the list? --->"))
+
+print(fruits[num],fruits[num1])
+fruits.append(fruit1)
+print(fruits)
+
+arrange =int(input("Do you want to rearrange the list \n Where do you want to put it: "))
+p = str(input("Which fruit do you want:"))
+fruits.insert(arrange,p)
+print(fruits)
+
+#list slicing
+order = int(input("Pick fruits in order = From:"))
+to = int(input("Pick fruits in order = To:"))
+print(fruits[order:to])
