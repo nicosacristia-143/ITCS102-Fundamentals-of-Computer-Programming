@@ -47,6 +47,13 @@ while True:
         else:
             left = passengers.pop(0)
             print(left, "Got off the front.")
+
+    elif choice == "5":
+        if len(passengers) == 0:
+            print("The jeep is empty")
+        else:
+            front = passengers.pop(0)
+            print(front, "Got off the front.")
             
     elif choice == "6":
         for i in range(len(passengers)):
